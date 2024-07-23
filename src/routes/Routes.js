@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About, Home, Cars, Checkout, Details, Login, Signup, NoPage } from '../pages/Pages';
+import { About, Home, Cars, Checkout, Details, Login, Signup, NoPage, Layout } from '../pages/Pages';
 
 export default function routes() {
   return (
@@ -8,7 +8,7 @@ export default function routes() {
         <Routes>
         
           {/* Main Website Routes */}
-          <Route path="/">
+          <Route path="/" element={<Layout/>}>
             <Route index element={<Home />} />
             <Route path="About" element={<About />} />
             <Route path="Cars" element={<Cars />} />
