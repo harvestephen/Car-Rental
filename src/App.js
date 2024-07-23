@@ -1,9 +1,10 @@
 import './styles/App.css';
+import Routes from './routes/Routes';
 
 function App() {
   return (
     <>
-      <h1>Car Rental</h1>
+      <Routes />
     </>
   );
 }
