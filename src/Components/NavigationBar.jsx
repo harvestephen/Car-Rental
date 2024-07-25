@@ -17,7 +17,7 @@ export default function NavigationBar() {
 
     return(
         <>  
-            <div className="sticky w-full h-14 bg-primary flex justify-center">
+            <div className="sticky w-full h-14 bg-primary flex justify-center z-50">
                 <div className="flex flex-row justify-between w-full max-w-screen-xl px-8">
                 <div className='md:hidden w-8'></div>
                     <div className="flex justify-start items-center space-x-4">
