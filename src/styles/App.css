@@ -5,4 +5,17 @@
 
 body {
     font-family:'Inter';
+    background-color: white;
 }
+
+@layer components{
+    .child-style > :first-child {
+        margin-top: 1rem; 
+        margin-left: 1rem; 
+      }
+    .offers-style-child > :first-child {
+        margin-top: 1.2rem; 
+        margin-left: 1.2rem; 
+      }
+}
+
