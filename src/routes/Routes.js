@@ -1,4 +1,4 @@
-  import { BrowserRouter, Routes, Route } from 'react-router-dom';
+  import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
   import { About, Home, Cars, Checkout, Details, Login, Signup, NoPage, Layout } from '../pages/Pages';
 
   export default function routes() {
@@ -6,8 +6,8 @@
       <>
         <BrowserRouter>
           <Routes>
-          
             {/* Main Website Routes */}
+            <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Layout/>}>
               <Route index element={<Home />} />
               <Route path="About" element={<About />} />
