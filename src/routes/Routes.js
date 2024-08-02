@@ -8,7 +8,7 @@
           <Routes>
           
             {/* Main Website Routes */}
-            <Route path="/" element={<Layout/>}>
+            <Route path="/home" element={<Layout/>}>
               <Route index element={<Home />} />
               <Route path="About" element={<About />} />
               <Route path="Cars" element={<Cars />} />
